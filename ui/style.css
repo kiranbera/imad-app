@@ -1,7 +1,5 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
 }
 
 .center {
@@ -21,7 +19,7 @@ body {
 }
 
 .container {
-    max width: 600;
+    max width: 800px;
     margin: 0 auto;
     color: red;
     font-family: Courier New;
