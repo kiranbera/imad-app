@@ -21,6 +21,7 @@ body {
 .container {
     margin: 100px;
     color: red;
+    text-align: Center;
     font-family: Courier New;
     padding-top: 60px;
     padding-left: 10px;
