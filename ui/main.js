@@ -29,7 +29,7 @@ button.onclick = function() {
     
     //Render d variable in d correct span
     counter =counter+1;
-    var sapn = document.getElementById('count');
+    var span = document.getElementById('count');
     span.innerHTML = counter.toString();
     
 };
