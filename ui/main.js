@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 
 
 var element =document.getElementById('main-text');
@@ -13,5 +13,24 @@ function moveRight() {
 }
 img.onclick = function() {
     var interval = setInterval(moveRight, 50);
+};*/
+
+
+//Counter Code
+var button = document.getElementById('counter');
+var counter = 0;
+
+
+button.onclick = function() {
+  
+    //Make a req to d counter endpoint
+    
+    //Capture d response & store it in a variable
+    
+    //Render d variable in d correct span
+    counter =counter+1;
+    var sapn = document.getElementById('count');
+    span.innerHTML = counter.toString();
+    
 };
    
