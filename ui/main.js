@@ -27,11 +27,11 @@ button.onclick = function() {
     
     //Capture d response & store it in a variable
     request.onreadystatechange = function() {
-        if(request.readyState === XMLHttpRwquest.DONE) {
+        if(request.readyState === XMLHttpRequest.DONE) {
             //Tkae some action
             if(request.status ===200) {
                 var counter = request.response.Text;
-                var span = document.getElementNyId('count');
+                var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
             }
         }
