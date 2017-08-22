@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 10;
     color: red;
     font-family: Courier New;
     padding-top: 60px;
