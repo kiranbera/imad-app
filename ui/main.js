@@ -16,21 +16,40 @@ img.onclick = function() {
 };*/
 
 
-//Counter Code
+//----------------Counter Code-------------------------
 var button = document.getElementById('counter');
-var counter = 0;
-
-
+//var counter = 0;
 button.onclick = function() {
   
-    //Make a req to d counter endpoint
+    //Create a req obj
+    var request = new XMLHttpRequest();
+    
     
     //Capture d response & store it in a variable
+    request.onreadystatechange = function() {
+        if(request.readyState === XMLHttpRwquest.DONE) {
+            //Tkae some action
+            if(request.status ===200) {
+                var counter = request.response.Text;
+                var span = document.getElementNyId('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+        //Not Yet Done
+    };
+    
     
     //Render d variable in d correct span
-    counter =counter+1;
+    /*counter =counter+1;
     var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    span.innerHTML = counter.toString();*/
     
+    //Make d req
+    request.open('GET', 'http://kiranbera57.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
+   
+   
+   
+   
    
